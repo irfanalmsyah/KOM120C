@@ -1,0 +1,8 @@
+*
+!*/
+!*.cpp
+!*.pdf
+!.gitignore
+!*.md
+tempCodeRunnerFile.*
+*tes*

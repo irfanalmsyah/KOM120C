@@ -1,7 +1,7 @@
 # Manajemen Mahasiswa
 
 ## Description
-Diketahui struktur class dalam representasi UML seperti yang tampil di ![link ini](img\mahasiswa.png)
+Diketahui struktur class dalam representasi UML seperti yang tampil di ![link ini](https://github.com/irfanalmsyah/KOM120C/raw/master/img/mahasiswa.png)
 
 Struktur class ini digunakan untuk mengelola data nilai mahasiswa (kode mata kuliah, sks, dan huruf mutu). Anda harus mendefinisikan setiap class sesuai gambar yang tersedia, dimana untuk class Nilai, Anda diberi keleluasaan untuk membuat atribut dan fungsi/method.
 

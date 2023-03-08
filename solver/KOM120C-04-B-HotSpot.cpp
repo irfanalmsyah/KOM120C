@@ -3,7 +3,7 @@ using namespace std;
 
 struct titik {
     int x, y;
-    bool operator<(const titik& other) const {
+    bool operator<(titik other) const {
         if (x > other.x || (x == other.x && y > other.y)) {
             return true;
         } else {
@@ -24,7 +24,7 @@ class Points {
         void printPoints() {
             cout << points.size() << endl;
             for (auto it = points.begin(); it != points.end(); it++) {
-                if ((it->x >= 0 && it->y > 0) || (it->x <= 0 && it->y > 0)) {
+                if (it->y > 0) {
                     cout << "(" << it->x << "," << it->y << ")";
                 }
             }

@@ -106,5 +106,4 @@ int main() {
     RuangManager rm;
     rm.init();
     rm.print();
-    return 0;
 }

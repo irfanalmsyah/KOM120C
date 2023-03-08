@@ -71,12 +71,13 @@ class Nilai : public Mahasiswa {
 };
 
 int main() {
+    Nilai n;
     string nama, nim, kode, sks;
     char nilai;
     int umur;
+    
     getline(cin, nama);
     cin >> umur >> nim;
-    Nilai n;
     n.setIdentitas(nama, umur, nim);
     while (cin >> kode) {
         cin >> sks >> nilai;

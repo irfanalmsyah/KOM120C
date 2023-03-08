@@ -1,25 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-struct Account {
-    string id;
-    bool operator<(const Account& other) const {
-        return id < other.id;
-    }
-};
-
 class TestCase {
     private:
+        string id;
         map<string, int> accountCounts;
     public:
+        bool operator<(TestCase other) {
+            return id < other.id;
+        }
         void setAccounts() {
             int n;
             cin >> n;
             for (int i = 0; i < n; i++) {
                 string id;
                 string firstPart, secondPart;
-                cin >> firstPart;
-                cin >> secondPart;
+                cin >> firstPart >> secondPart;
                 id = firstPart + secondPart;
                 accountCounts[id]++;
             }

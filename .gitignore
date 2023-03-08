@@ -3,6 +3,7 @@
 !*.cpp
 !*.pdf
 !.gitignore
+!*.png
 !*.md
 tempCodeRunnerFile.*
 *tes*

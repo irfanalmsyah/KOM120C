@@ -6,14 +6,18 @@ Diketahui struktur class dalam representasi UML seperti yang tampil di ![link in
 Struktur class ini digunakan untuk mengelola data nilai mahasiswa (kode mata kuliah, sks, dan huruf mutu). Anda harus mendefinisikan setiap class sesuai gambar yang tersedia, dimana untuk class Nilai, Anda diberi keleluasaan untuk membuat atribut dan fungsi/method.
 
 ## Input Format
+```
 [nama mahasiswa]
 [usia]
 [nim]
 { [kode mata kuliah] [sks] [huruf mutu] }
+```
 
 ## Output Format
+```
 Satu baris dengan format [nama mahasiswa][spasi]([nim])[:][total sks][:][ipk, dengan 2 digit di belakang tanda desimal]
 Catatan: Huruf mutu berturut-turut adalah A, B, C, D, F dengan nilai 4, 3, 2, 1, 0
+```
 
 ## Sample Input
 ```

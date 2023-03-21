@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+bool compare(pair<string,double> a, pair<string,double> b) {
+    return a.second > b.second;
+}
+
 class Barang {
     public:
         string kode; // kode barang
@@ -61,24 +65,18 @@ class Penjualan {
         }
         return total;
     }
-    void print() { // mencetak data penjualan
-        for (auto it = dt.begin(); it != dt.end(); it++) {
-            cout << it->first << " " << daftar.getNama(it->first) << " " << it->second << " " << fixed << setprecision(2) << (double)daftar.getHarga(it->first) * it->second / 1000000 << endl;
-        }
-        cout << "Total Nilai : " << fixed << setprecision(2) << (double)getTotalHarga() / 1000000 << " juta rupiah" << endl;
-    }
-    void printSortedByTotalDividedByHarga() { // mencetak data penjualan yang diurutkan berdasarkan total harga / harga barang
+    
+    void print() {
         vector<pair<string,double>> v;
         for (auto it = dt.begin(); it != dt.end(); it++) {
-            v.push_back({it->first, (double)daftar.getHarga(it->first) * it->second / getTotalHarga()});
+            v.push_back({it->first, (double)daftar.getHarga(it->first) * it->second});
         }
-        sort(v.begin(), v.end(), [](pair<string,double> a, pair<string,double> b) {
-            return a.second > b.second;
-        });
+        sort(v.begin(), v.end(), compare);
+        cout << fixed << setprecision(2);
         for (auto it = v.begin(); it != v.end(); it++) {
-            cout << it->first << " " << daftar.getNama(it->first) << " " << dt[it->first] << " " << fixed << setprecision(2) << (double)daftar.getHarga(it->first) * dt[it->first] / 1000000 << endl;
+            cout << it->first << " " << daftar.getNama(it->first) << " " << dt[it->first] << " " << (double)it -> second / 1000000 << endl;
         }
-        cout << "Total Nilai : " << fixed << setprecision(2) << (double)getTotalHarga() / 1000000 << " juta rupiah" << endl;
+        cout << "Total Nilai : " << (double)getTotalHarga() / 1000000 << " juta rupiah" << endl;
     }
 };
 
@@ -93,6 +91,6 @@ int main() {
         cin >> kode >> jumlah;
         penjualan.add(kode, jumlah);
     }
-    penjualan.printSortedByTotalDividedByHarga();
+    penjualan.print();
     return 0;
 }

@@ -45,43 +45,41 @@ class Penjualan {
         map<string,int> dt; // data penjualan
         int size; // ukuran data penjualan
     public:
-    Penjualan() {
-        daftar.init();
-        size=0; 
-    }
-    void add(string kode, int jumlah) { // menambah data penjualan
-        if (daftar.isExist(kode)) { 
-            dt[kode] += jumlah;
-            size++;
+        Penjualan() {
+            daftar.init();
+            size=0; 
         }
-    }
-    int getJumlah(string kode) { // mendapatkan jumlah barang yang terjual
-        return dt[kode];
-    }
-    int getTotalHarga() { // mendapatkan total harga penjualan
-        int total = 0;
-        for (auto it = dt.begin(); it != dt.end(); it++) {
-            total += daftar.getHarga(it->first) * it->second;
+        void add(string kode, int jumlah) { // menambah data penjualan
+            if (daftar.isExist(kode)) { 
+                dt[kode] += jumlah;
+                size++;
+            }
         }
-        return total;
-    }
-    
-    void print() {
-        vector<pair<string,double>> v;
-        for (auto it = dt.begin(); it != dt.end(); it++) {
-            v.push_back({it->first, (double)daftar.getHarga(it->first) * it->second});
+        int getJumlah(string kode) { // mendapatkan jumlah barang yang terjual
+            return dt[kode];
         }
-        sort(v.begin(), v.end(), compare);
-        cout << fixed << setprecision(2);
-        for (auto it = v.begin(); it != v.end(); it++) {
-            cout << it->first << " " << daftar.getNama(it->first) << " " << dt[it->first] << " " << (double)it -> second / 1000000 << endl;
+        int getTotalHarga() { // mendapatkan total harga penjualan
+            int total = 0;
+            for (auto it = dt.begin(); it != dt.end(); it++) {
+                total += daftar.getHarga(it->first) * it->second;
+            }
+            return total;
         }
-        cout << "Total Nilai : " << (double)getTotalHarga() / 1000000 << " juta rupiah" << endl;
-    }
+        void print() {
+            vector<pair<string,double>> v;
+            for (auto it = dt.begin(); it != dt.end(); it++) {
+                v.push_back({it->first, (double)daftar.getHarga(it->first) * it->second});
+            }
+            sort(v.begin(), v.end(), compare);
+            cout << fixed << setprecision(2);
+            for (auto it = v.begin(); it != v.end(); it++) {
+                cout << it->first << " " << daftar.getNama(it->first) << " " << dt[it->first] << " " << (double)it -> second / 1000000 << endl;
+            }
+            cout << "Total Nilai : " << (double)getTotalHarga() / 1000000 << " juta rupiah" << endl;
+        }
 };
 
 int main() {
-    DaftarKode daftar;
     Penjualan penjualan;
     int n;
     cin >> n;

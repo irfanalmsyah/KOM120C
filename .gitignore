@@ -1,6 +1,7 @@
 *
 !*/
 !*.cpp
+!*.java
 !*.pdf
 !.gitignore
 !*.png

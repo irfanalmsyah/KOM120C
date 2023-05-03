@@ -22,6 +22,8 @@ Kumpulan problemset dan penyelesaian dari praktikum mata kuliah Pemrograman
 | Pertemuan 8 | [Class Person](problemset/ClassPerson.md) | [ClassPerson.java](solver/ClassPerson.java) |
 | Pertemuan 9 | [ArrayList](problemset/ArrayList.md) | [ArrayList.java](solver/ArrayList.java) |
 | Pertemuan 9 | [Hotspot](problemset/Hotspot.md) | [Hotspot.java](solver/Hotspot.java) |
+| Pertemuan 10 | [Pewarisan Class Pegawai](problemset/PegawaiManager.md) | [PegawaiManager.java](solver/PegawaiManager.java) |
+| Pertemuan 10 | [Pagar Tanah Pak Agri](problemset/TanahManager.md) | [TanahManager.java](solver/TanahManager.java) |
 | UTSP 2022 | [Matrik](problemset/matrik.md) | [matrik.cpp](solver/matrik.cpp) |
 | UTSP 2023 | [Segitiga](problemset/segitiga.md) | [segitiga.cpp](solver/segitiga.cpp) |
 | UTSP 2023 | [Menghitung Kalori](problemset/kalori.md) | [kalori.cpp](solver/kalori.cpp) |

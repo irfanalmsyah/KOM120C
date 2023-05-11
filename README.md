@@ -24,6 +24,8 @@ Kumpulan problemset dan penyelesaian dari praktikum mata kuliah Pemrograman
 | Pertemuan 9 | [Hotspot](problemset/Hotspot.md) | [Hotspot.java](solver/Hotspot.java) |
 | Pertemuan 10 | [Pewarisan Class Pegawai](problemset/PegawaiManager.md) | [PegawaiManager.java](solver/PegawaiManager.java) |
 | Pertemuan 10 | [Pagar Tanah Pak Agri](problemset/TanahManager.md) | [TanahManager.java](solver/TanahManager.java) |
+| Pertemuan 11 | [Volume Silinder](problemset/VolumeSilinder.md) | [VolumeSilinder.java](solver/VolumeSilinder.java) |
+| Pertemuan 11 | [Interface Shape2D](problemset/InterfaceShape2D.md) | [InterfaceShape2D.java](solver/InterfaceShape2D.java) |
 | UTSP 2022 | [Matrik](problemset/matrik.md) | [matrik.cpp](solver/matrik.cpp) |
 | UTSP 2023 | [Segitiga](problemset/segitiga.md) | [segitiga.cpp](solver/segitiga.cpp) |
 | UTSP 2023 | [Menghitung Kalori](problemset/kalori.md) | [kalori.cpp](solver/kalori.cpp) |

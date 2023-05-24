@@ -26,6 +26,8 @@ Kumpulan problemset dan penyelesaian dari praktikum mata kuliah Pemrograman
 | Pertemuan 10 | [Pagar Tanah Pak Agri](problemset/TanahManager.md) | [TanahManager.java](solver/TanahManager.java) |
 | Pertemuan 11 | [Volume Silinder](problemset/VolumeSilinder.md) | [VolumeSilinder.java](solver/VolumeSilinder.java) |
 | Pertemuan 11 | [Interface Shape2D](problemset/InterfaceShape2D.md) | [InterfaceShape2D.java](solver/InterfaceShape2D.java) |
+| Pertemuan 12 | [Polymorphism Menggunakan Abstract Class](problemset/PolymorphismAbstract.md) | [PolymorphismAbstract.java](solver/PolymorphismAbstract.java) |
+| Pertemuan 12 | [Polymorphism Menggunakan Interface](problemset/PolymorphismInterface.md) | [PolymorphismInterface.java](solver/PolymorphismInterface.java) |
 | UTSP 2022 | [Matrik](problemset/matrik.md) | [matrik.cpp](solver/matrik.cpp) |
 | UTSP 2023 | [Segitiga](problemset/segitiga.md) | [segitiga.cpp](solver/segitiga.cpp) |
 | UTSP 2023 | [Menghitung Kalori](problemset/kalori.md) | [kalori.cpp](solver/kalori.cpp) |

@@ -35,3 +35,7 @@ Kumpulan problemset dan penyelesaian dari praktikum mata kuliah Pemrograman
 | UTSP 2023 | [Menghitung Kalori](problemset/kalori.md) | [kalori.cpp](solver/kalori.cpp) |
 | UTSP 2023 | [Pembagian Kelas](problemset/kelas.md) | [kelas.cpp](solver/kelas.cpp) |
 | UTSP 2023 | [Database Stok Barang](problemset/database.md) | [database.cpp](solver/database.cpp) |
+| UASP 2023 | [Paritas](problemset/Paritas.md) | [Paritas.java](solver/paritas.java) |
+| UASP 2023 | [Luas Permukaan dan Volumen Kubus](problemset/LuasPermukaanDanVolumeKubus.md) | [LuasPermukaanDanVolumeKubus.java](solver/LuasPermukaanDanVolumeKubus.java) |
+| UASP 2023 | [Parsel Buah](problemset/ParselBuah.md) | [ParselBuah.java](solver/ParselBuah.java) |
+| UASP 2023 | [Magic Battle](problemset/MagicBattle.md) | [MagicBattle.java](solver/MagicBattle.java) |
